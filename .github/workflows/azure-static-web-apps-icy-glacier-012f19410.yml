@@ -78,7 +78,7 @@ jobs:
           npm run build
           
       - name: Upload Artifact for Deployment
-        uses: actions/upload-artifact@v2  # Updated to version 2 of upload-artifact action
+        uses: actions/upload-artifact@v3  # Updated to version 2 of upload-artifact action
         with:
           name: node-app
           path: build
