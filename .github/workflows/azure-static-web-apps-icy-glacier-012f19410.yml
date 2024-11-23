@@ -91,7 +91,7 @@ jobs:
 
     steps:
       - name: Download Artifact from Build Job
-        uses: actions/download-artifact@v2  # Updated to version 2 of download-artifact action
+        uses: actions/download-artifact@v3  # Updated to version 2 of download-artifact action
         with:
           name: node-app
           path: build  # Ensure the correct path to extract the artifact
