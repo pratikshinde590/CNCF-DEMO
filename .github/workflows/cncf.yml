@@ -36,16 +36,16 @@ jobs:
       #     fetch-depth: 0  # Fetch 
 
 
-      - name: Set up Git
-        env:
-          USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
-          USER_NAME: ${{ secrets.GIT_USER_NAME }}
-          REPO_URL: ${{ secrets.GIT_REPO_URL }}
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-        run: |
-          git config --global user.email "${USER_EMAIL}"
-          git config --global user.name "${USER_NAME}"
-          git remote set-url origin "https://${PAT_TOKEN}@github.com/pratikshinde590/CNCF-DEMO.git"
+      # - name: Set up Git
+      #   env:
+      #     USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+      #     USER_NAME: ${{ secrets.GIT_USER_NAME }}
+      #     REPO_URL: ${{ secrets.GIT_REPO_URL }}
+      #     PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+      #   run: |
+      #     git config --global user.email "${USER_EMAIL}"
+      #     git config --global user.name "${USER_NAME}"
+      #     git remote set-url origin "https://${PAT_TOKEN}@github.com/pratikshinde590/CNCF-DEMO.git"
 
         
       - name: Run Semantic Release
