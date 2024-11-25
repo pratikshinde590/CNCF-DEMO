@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2  # Action for github
+        uses: actions/checkout@v2  # Action
 
       - name: Set up Node.js version
         uses: actions/setup-node@v2  
