@@ -42,11 +42,7 @@
     "semantic-release": "^24.2.0"
   },
 
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/pratikshinde590/CNCF-DEMO.git"
-    },
-      
+  "repository": "https://github.com/sparrowapp-dev/sparrow-app.git",
 
   "release": {
     "branches": [
