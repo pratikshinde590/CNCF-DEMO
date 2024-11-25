@@ -50,16 +50,31 @@
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
+      [
       "@semantic-release/release-notes-generator",
+      {
+        "writerOpts": {
+          "headerPartial": "",
+          "footerPartial": ""
+        }
+      }
+    ],
+    [
       "@semantic-release/changelog",
+      {
+        "changelogTitle": "🚀 Sparrow Release Notes",
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
       [
         "@semantic-release/git",
         {
           "assets": [
-            "CHANGELOG.md"
+            "CHANGELOG.md",
+            "release-notes.md"
             
           ],
-          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n$(cat release-notes.md)"
         }
       ],
       "@semantic-release/github"
