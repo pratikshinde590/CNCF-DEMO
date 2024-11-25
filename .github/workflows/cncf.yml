@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v2  # Action
         with:
-          node-version: '20'  # Here using node 18 version can change as per requirement.
+          node-version: '20'  
 
       - name: Install Dependencies, Build, and Test
         run: |
